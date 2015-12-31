@@ -34,6 +34,13 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com//IviduIA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+
+Here's an updated walkthrough of implemented user stories:
+
+
+<img src='http://imgur.com/jK8ctxJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
