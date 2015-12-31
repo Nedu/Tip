@@ -8,7 +8,7 @@ Submitted by: **Chinedum Robert-Maduekwe**
 
 This is my first app ever on any platform. I had no knowledge or experience with Swift prior to doing this project. 
 
-Time spent: **6** hours spent in total
+Time spent: **12** hours spent in total
 
 ## User Stories
 
