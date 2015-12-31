@@ -11,7 +11,11 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var settingsTipControl: UISegmentedControl!
+    @IBOutlet weak var ThemeSwitch: UISwitch!
+    @IBOutlet weak var TipLabel: UILabel!
+    @IBOutlet weak var ThemeLabel: UILabel!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +33,16 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         let defaults = NSUserDefaults.standardUserDefaults()
     settingsTipControl.selectedSegmentIndex = defaults.integerForKey("default_tip_percentage")
+       
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(ThemeSwitch.enabled, forKey: "ThemeSwitch")
+    }
+    
+    
     
     @IBAction func defaultTipChanged(sender: AnyObject) {
     
@@ -38,6 +51,29 @@ class SettingsViewController: UIViewController {
         defaults.synchronize()
 
     }
+    
+    
+
+    @IBAction func changeTheme() {
+            if(ThemeSwitch.on){
+                self.view.backgroundColor = UIColor.blackColor()
+                TipLabel.textColor = UIColor.whiteColor()
+                ThemeLabel.textColor = UIColor.whiteColor()
+            }
+            else {
+                self.view.backgroundColor = UIColor(
+                    red: 211,
+                    green: 196/255.0,
+                    blue: 253,
+                    alpha: 1)
+                TipLabel.textColor = UIColor.blackColor()
+                ThemeLabel.textColor = UIColor.blackColor()
+                
+            }
+            
+            
+        }
+    
 
     /*
     // MARK: - Navigation
