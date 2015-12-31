@@ -26,6 +26,7 @@ The following **additional** features are implemented:
 
 - [x] Add a light/dark color theme to the settings view using a switch.
 - [x] Added a slider to account for multiple people 
+- [x] Added an app icon and a start screen
 
 ## Video Walkthrough 
 
