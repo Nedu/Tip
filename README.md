@@ -3,7 +3,7 @@
 
 **Tip Calculator** is a tip calculator application for iOS.
 
-Submitted by: **Chinedum Robert-Maduekwe**
+Submitted by: **Nedu Robert**
 
 
 This is my first app ever on any platform. I had no knowledge or experience with Swift prior to doing this project. 
